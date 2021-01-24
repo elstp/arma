@@ -1,0 +1,20 @@
+# 配置端口
+server:
+  port: 8080
+spring:
+  #redis缓存设置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    database: 0
+    jedis:
+      pool:
+        max-active: 50
+        max-wait: 3000
+        max-idle: 20
+        min-idle: 2
+    timeout: 10000
+    #缓存
+  thymeleaf:
+    cache: false

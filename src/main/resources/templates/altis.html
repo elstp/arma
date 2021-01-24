@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>娱乐至上5服线上实时状态</title>
+    <link rel="stylesheet" th:href="@{/css/leaflet.css}" />
+    <link rel="stylesheet" th:href="@{/css/mapUtils.css}" />
+    <link rel="stylesheet" th:href="@{/css/message.css}">
+</head>
+<body style=" margin:0;padding:0;border:0;">
+
+
+<audio autoplay="1" id="bgm" loop="1"><source src="http://music.163.com/song/media/outer/url?id=3935191.mp3"></audio>
+
+
+
+
+<div class="map" id="map" style="width:100%; height:100vh; margin:0;padding:0;border:0;">
+
+</div>
+
+    <script th:src="@{/js/leaflet.js}"></script>
+    <script th:src="@{/js/jquery.min.js}"></script>
+    <script th:src="@{/js/mapUtils.js}"></script>
+    <script th:src="@{/js/defaultMap.js}"></script>
+    <script th:src="@{/maps/altis.js}"></script>
+    <script th:src="@{/js/iconList.js}"></script>
+    <script th:src="@{/js/websocket.js}"></script>
+    <script th:src="@{/js/message.min.js}"></script>
+
+    <script>
+	  InitMap(Arma3Map.Maps.altis);
+      openSocket();
+
+
+
+
+    </script>
+</body>
+</html>
